@@ -97,4 +97,8 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ---
 
+<<<<<<< Updated upstream
 **Made with ❤️ for chatting!**
+=======
+**Made with ❤️ for chatting!**
+>>>>>>> Stashed changes

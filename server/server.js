@@ -1,8 +1,6 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-
-
 import { app, server } from "./socket/socket.js";
 import express from "express";
 import { connectDB } from "./db/connection1.db.js";
@@ -12,9 +10,12 @@ import cors from "cors";
 connectDB();
 
 app.use(
-  cors({  
-    origin: "*",
-    methods: "GET,POST,PUT,DELETE,OPTIONS",
+  cors({
+    origin:[process.env.FRONTEND_URL],
+     
+    // methods: "GET,POST,PUT,DELETE,OPTIONS",
+    // allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   })
 );
 app.use(express.json());

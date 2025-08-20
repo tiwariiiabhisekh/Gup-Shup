@@ -15,7 +15,7 @@ app.use(
       ? process.env.FRONTEND_URL.split(",")
       : ["http://localhost:3000", "http://localhost:5173"],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+    allowedHeaders: ["Content-Type", "Authorization", "contenttype"],
     credentials: true,
   })
 );

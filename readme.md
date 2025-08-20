@@ -1,2 +1,0 @@
-# Gup-Shup
-Chat application 

@@ -45,7 +45,12 @@ const UserSidebar = () => {
   }, []);
 
   return (
-     <div className={`max-w-${!expand ? '[4em]' : '[20em]'} w-full h-screen flex flex-col border-r border-r-white/10 flex justify-between`} >
+     <div
+  className={`${
+    !expand ? "max-w-[4em]" : "max-w-[25em]"
+  } w-full h-screen border-r border-r-white/10 flex flex-col justify-between`}
+>
+
        <div className="toogle bg-black mx-3 rounded-lg mt-3 px-2 py-1 flex items-center justify-between">
        { expand && <h1 className="  text-[#7480FF] text-xl font-semibold">
         GUP SHUP

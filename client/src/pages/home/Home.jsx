@@ -34,7 +34,7 @@ const Home = () => {
   }, [socket]);
 
   return (
-    <div className="flex max-h-screen">
+    <div className="flex  ">
       <UserSidebar />
       <MessageContainer />
     </div>
